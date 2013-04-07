@@ -1,0 +1,90 @@
+/*
+Theme Name: Twenty Twelve - Szluug version
+Theme URI: http://wordpress.org/extend/themes/twentytwelve
+Author: Marcin Juszkiewicz
+Author URI: http://wordpress.org/
+Template: twentytwelve
+Description: Modyfikacja Twelve Twelve na potrzeby Szluug.org
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Tags: light, gray, white, one-column, two-columns, right-sidebar, flexible-width, custom-background, custom-header, custom-menu, editor-style, featured-images, flexible-header, full-width-template, microformats, post-formats, rtl-language-support, sticky-post, theme-options, translation-ready
+Text Domain: twentytwelve
+
+Ten plik zawiera jedynie zmiany CSS względem Twenty Twelve
+
+/* =Reset
+-------------------------------------------------------------- */
+
+@import url("../twentytwelve/style.css");
+
+
+/* czerwony pasek przed treścią nagłówka */
+
+.archive-title,
+.page-title,
+.widget-title,
+.entry-content th,
+.comment-content th {
+	font-size: 11px;
+	font-size: 0.785714286rem;
+	line-height: 2.181818182;
+	font-weight: bold;
+	text-transform: uppercase;
+	color: #636363;
+	border-left: solid rgb(182,0,0) 5px;
+	padding-left: 0.5em;
+}
+
+.entry-header .entry-title {
+	font-size: 20px;
+	font-size: 1.428571429rem;
+	line-height: 1.2;
+	font-weight: normal;
+	border-left: solid rgb(182,0,0) 5px;
+	padding-left: 0.5em;
+}
+.entry-content h1,
+.comment-content h1,
+.entry-content h2,
+.comment-content h2,
+.entry-content h3,
+.comment-content h3,
+.entry-content h4,
+.comment-content h4,
+.entry-content h5,
+.comment-content h5,
+.entry-content h6,
+.comment-content h6 {
+	margin: 24px 0;
+	margin: 1.714285714rem 0;
+	line-height: 1.714285714;
+	border-left: solid rgb(182,0,0) 5px;
+	padding-left: 0.5em;
+}
+
+/* 
+ * nie podkreślaj linków dopóki nie najadę
+ * i mają być czerwone 
+ */
+a {
+	outline: none;
+	color: rgb(182,0,0);
+	text-decoration: none;
+}
+.comments-link a:hover,
+.entry-meta a:hover,
+article.format-aside h1 a:hover,
+.format-status .entry-header header a:hover
+.comments-area article header a:hover,
+.comments-area article header cite a:hover,
+a.comment-reply-link:hover,
+a.comment-edit-link:hover,
+a:hover {
+	color: rgb(182,0,0);
+	text-decoration: underline;
+}
+.entry-header .entry-title a {
+	color: #757575;
+	text-decoration: none;
+}
