@@ -4,37 +4,44 @@ body {
 
 	padding-left: 20px;
 	padding-right: 20px;
+	
+	color: rgb(68, 68, 68);
+	font-family: "Open Sans", "Helvetica", "Arial", sans-serif;
+}
+h1, h2, h3, h4, h5, h6 {
+	padding:  0.5em 0;
 }
 
 h1 {
 	margin-top: 0px;
 	padding-top: 20px;
 
-	font-family: "Bitstream Vera Sans", sans-serif;
+	font-size: 2em;
 	font-weight: normal;
-	letter-spacing: -2px;
-	text-transform: lowercase;
 	text-align: right;
 
 	color: grey;
 }
 
-h2 {
-	font-family: "Bitstream Vera Sans", sans-serif;
+ h2 {
 	font-weight: normal;
 	color: #200080;
 
 	margin-left: -20px;
 }
 
-h3 {
-	font-family: "Bitstream Vera Sans", sans-serif;
+.channelgroup > h3 {
 	font-weight: normal;
 
-	background-color: #a0c0ff;
-	border: 1px solid #5080b0;
+	border-left: solid rgb(182,0,0) 5px;
+	padding-left: 0.5em;
+}
 
-	padding: 4px;
+.entry h1, h2, h3, h4 {
+	background: none;
+	border: none;
+	padding: 0;
+	text-align: left;
 }
 
 h3 a {
@@ -43,7 +50,6 @@ h3 a {
 }
 
 h4 {
-	font-family: "Bitstream Vera Sans", sans-serif;
 	font-weight: bold;
 }
 
@@ -62,7 +68,6 @@ img.face {
 }
 
 .entry .date {
-	font-family: "Bitstream Vera Sans", sans-serif;
 	color: grey;
 }
 
@@ -84,7 +89,6 @@ img.face {
 	padding-top: 20px;
 	padding-left: 0px;
 
-	font-family: "Bitstream Vera Sans", sans-serif;
 	font-size: 85%;
 }
 
@@ -108,6 +112,9 @@ img.face {
 	color: grey;
 }
 
+a {
+        color: rgb(117, 117, 117);
+}
 .sidebar ul li a {
         text-decoration: none;
 }
@@ -135,12 +142,9 @@ img.face {
 
 .sidebar a.message:hover {
     cursor: help;
-	background-color: #ff0000;
-	color: #ffffff !important;
 	text-decoration: none !important;
 }
 
 a:hover {
 	text-decoration: underline !important;
-	color: blue !important;
 }
